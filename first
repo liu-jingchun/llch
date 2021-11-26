@@ -1,7 +1,33 @@
-echo "# llch" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/liu-jingchun/llch.git
-git push -u origin main
+//file:///C:/Users/liuji/Documents/My_Html/LJC_first.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>刘景春的JavaScript示例</title>
+</head>
+<body>
+    <div id="box"></div>
+    <h1>我的第一个 JavaScript</h1>
+    <input id="id_input" type="text">
+    <script>
+        var box = document.getElementById('box');
+        console.log(box);
+        var a = 'Hello', b = 'JavaScript';
+        var c = a + ' ' + b;
+        console.log(c);
+        box.innerHTML = c;
+        console.log("liu");
+        sayHello("Liujingchun")
+        function sayHello(name){
+            document.write("Hello " + name);
+        }
+        function responseToClick(){
+            var x=document.getElementById("id_input").value;
+            x="Your Type is :" +x ;
+            alert(x)
+        }
+    </script>
+    <button type="button" onclick="responseToClick()">点我!</button>
+</body>
+</html>
+
